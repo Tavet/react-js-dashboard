@@ -5,7 +5,8 @@
     },
     "navbar": {
         "menu": {
-            "home": "Einleitung"
+            "home": "Einleitung",
+            "profile": "Profil"
         }
     }
 }

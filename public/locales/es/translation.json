@@ -5,7 +5,8 @@
     },
     "navbar": {
         "menu": {
-            "home": "Inicio"
+            "home": "Inicio",
+            "profile": "Perfil"
         }
     }
 }

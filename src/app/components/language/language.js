@@ -43,7 +43,7 @@ const CustomMenu = forwardRef(
 
 const LanguageComponent = () => {
 
-    // eslint-disable-nex-line
+    // eslint-disable-next-line
     const [t, i18n] = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);

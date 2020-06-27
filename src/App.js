@@ -1,12 +1,15 @@
 import React, { Suspense } from 'react';
-import HomeScreen from './app/screens/home';
 import './App.sass'
+import { BrowserRouter } from 'react-router-dom';
+import SwitchScreen from './app/screens/switch/switch';
 
 function App() {
     return (
-        <Suspense fallback={<div>Loading</div>}>
-            <HomeScreen />
-        </Suspense>
+        <BrowserRouter>
+            <Suspense fallback={<div>Loading</div>}>
+                <SwitchScreen />
+            </Suspense>
+        </BrowserRouter>
     );
 }
 

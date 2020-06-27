@@ -1,7 +1,8 @@
 import React from 'react';
-import LanguageComponent from '../language/language';
+import LanguageComponent from '../../../../components/language/language';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const NavbarComponent = () => {
     const [t] = useTranslation();
@@ -12,7 +13,8 @@ const NavbarComponent = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">{t('navbar.menu.home')}</Nav.Link>
+                        <Link to='/'>{t('navbar.menu.home')}</Link>
+                        <Link to='/profile'>{t('navbar.menu.profile')}</Link>
                     </Nav>
                     <LanguageComponent />
                 </Navbar.Collapse>

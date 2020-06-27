@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarComponent from '../components/navbar/navbar';
+import NavbarComponent from './components/navbar/navbar';
 import './home.sass';
 
 const HomeScreen = () => {
