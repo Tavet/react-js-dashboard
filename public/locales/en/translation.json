@@ -1,12 +1,53 @@
 {
     "home": {
         "title": "Ubeslang",
-        "slogan": "Learn vocabulary anywhere"
+        "slogan": "¡Aprende vocabulario en cualquier lugar!"
     },
     "navbar": {
         "menu": {
-            "home": "Home",
-            "dashboard": "Dashboard"
+            "home": "Inicio",
+            "dashboard": "Tablero"
+        }
+    },
+    "dashboard": {
+        "screens": {
+            "register": {
+                "form": {
+                    "control": {
+                        "email": {
+                            "title": "Correo electrónico",
+                            "helper": "No compartiremos tu correo electrónico con nadie más",
+                            "errors": {
+                                "required": "Debes escribir un correo electrónico",
+                                "pattern": "Correo electrónico inválido",
+                                "maxLength": "El correo electrónico no debe superar los 50 carácteres"
+                            }
+                        },
+                        "password": {
+                            "title": "Contraseña",
+                            "errors": {
+                                "required": "Debes escribir una contraseña",
+                                "minLength": "Escribe una contraseña mayor a 6 carácteres"
+                            }
+                        },
+                        "location": {
+                            "title": "Ubicación",
+                            "helper": "Utilizaremos tu ubicación para mejorar las expresiones culturales",
+                            "errors": {
+                                "required": "Por favor escoge una ubicación"
+                            }
+                        },
+                        "language": {
+                            "title": "Lenguaje",
+                            "helper": "Idioma nativo o hábil para aprender nuevos significados de otros idiomas",
+                            "errors": {
+                                "required": "Por favor escoge un lenguaje hábil"
+                            }
+                        },
+                        "submit": "Registrarme"
+                    }
+                }
+            }
         }
     }
 }

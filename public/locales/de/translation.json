@@ -1,12 +1,53 @@
 {
     "home": {
         "title": "Ubeslang",
-        "slogan": "Lernen sie überall vokabeln"
+        "slogan": "¡Aprende vocabulario en cualquier lugar!"
     },
     "navbar": {
         "menu": {
-            "home": "Einleitung",
-            "dashboard": "Armaturenbrett"
+            "home": "Inicio",
+            "dashboard": "Tablero"
+        }
+    },
+    "dashboard": {
+        "screens": {
+            "register": {
+                "form": {
+                    "control": {
+                        "email": {
+                            "title": "Correo electrónico",
+                            "helper": "No compartiremos tu correo con nadie más.",
+                            "errors": {
+                                "required": "Debes escribir un correo electrónico",
+                                "pattern": "Correoelectrónico inválido"
+                            }
+                        },
+                        "password": {
+                            "title": "Contraseña",
+                            "helper": "",
+                            "errors": {
+                                "required": "Debes escribir una contraseña",
+                                "length": "Escribe una contraseña segura"
+                            }
+                        },
+                        "location": {
+                            "title": "Ubicación",
+                            "helper": "",
+                            "errors": {
+                                "required": "Por favor escoge una ubicación"
+                            }
+                        },
+                        "language": {
+                            "title": "Lenguaje",
+                            "helper": "Idioma nativo o hábil para aprender nuevos significados de otros idiomas",
+                            "errors": {
+                                "required": "Por favor escoge un lenguaje hábil"
+                            }
+                        },
+                        "submit": "Registrarme"
+                    }
+                }
+            }
         }
     }
 }

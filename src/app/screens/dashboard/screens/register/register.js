@@ -8,6 +8,7 @@ const RegisterScreen = () => {
     const [userData, setUserData] = useState({});
 
     const retrieveUserData = (data) => {
+        setUserData(data);
         console.log("Retrieveng user data: ", data);
     }
 
