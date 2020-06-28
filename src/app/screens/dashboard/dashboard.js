@@ -1,15 +1,26 @@
 import React from 'react';
 import './dashboard.sass';
-import NavbarComponent from '../home/components/navbar/navbar';
+import NavbarDashboardComponent from './components/navbar/navbar';
+import PropTypes from 'prop-types';
+import { Auth } from 'aws-amplify';
 
-const DashboardScreen = () => {
+const DashboardScreen = ({ history }) => {
+    Auth.currentSession()
+        .then(data => console.log(data))
+        .catch(_ => history.push('/dashboard/login'));
 
     return (
         <section className="dashboard">
-            <NavbarComponent />
-            Hola en dashboard
+            <NavbarDashboardComponent />
+            yeah dashboard
         </section>
     );
+}
+
+DashboardScreen.propTypes = {
+    router: PropTypes.shape({
+        history: PropTypes.object.isRequired
+    })
 }
 
 export default DashboardScreen;

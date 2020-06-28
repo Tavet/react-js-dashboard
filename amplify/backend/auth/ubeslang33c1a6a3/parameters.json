@@ -1,0 +1,96 @@
+{
+    "identityPoolName": "ubeslang33c1a6a3_identitypool_33c1a6a3",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "ubesla33c1a6a3",
+    "userPoolName": "ubeslang33c1a6a3_userpool_33c1a6a3",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email",
+        "name"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "ubesla33c1a6a3_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "33c1a6a3",
+    "resourceName": "ubeslang33c1a6a3",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "usernameAttributes": [
+        "email"
+    ],
+    "triggers": "{\"DefineAuthChallenge\":[\"captcha-define-challenge\"],\"CreateAuthChallenge\":[\"captcha-create-challenge\"],\"VerifyAuthChallengeResponse\":[\"captcha-verify\"]}",
+    "hostedUIDomainName": "ubeslang33c1a6a3-33c1a6a3",
+    "authProvidersUserPool": [
+        "Facebook",
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/dashboard/\"],\"LogoutURLs\":[\"http://localhost:3000/signout/\"]}",
+    "userPoolGroupList": [],
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ubeslang33c1a6a3DefineAuthChallenge",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "ubeslang33c1a6a3CreateAuthChallenge",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "ubeslang33c1a6a3VerifyAuthChallengeResponse",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        }
+    ]
+}

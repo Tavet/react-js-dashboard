@@ -1,0 +1,55 @@
+{
+	"function": {
+		"ubeslang33c1a6a3DefineAuthChallenge": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda"
+		},
+		"ubeslang33c1a6a3CreateAuthChallenge": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda"
+		},
+		"ubeslang33c1a6a3VerifyAuthChallengeResponse": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda"
+		}
+	},
+	"auth": {
+		"ubeslang33c1a6a3": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "ubeslang33c1a6a3DefineAuthChallenge",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "ubeslang33c1a6a3CreateAuthChallenge",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "ubeslang33c1a6a3VerifyAuthChallengeResponse",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				}
+			],
+			"customAuth": true
+		}
+	}
+}

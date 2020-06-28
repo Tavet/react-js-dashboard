@@ -2,9 +2,8 @@ import React from 'react';
 import LanguageComponent from '../../../../components/language/language';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
-const NavbarComponent = () => {
+const NavbarHomeComponent = () => {
     const [t] = useTranslation();
     return (
         <div>
@@ -13,8 +12,8 @@ const NavbarComponent = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Link to='/'>{t('navbar.menu.home')}</Link>
-                        <Link to='/profile'>{t('navbar.menu.profile')}</Link>
+                        <Nav.Link href='/'>{t('navbar.menu.home')}</Nav.Link>
+                        <Nav.Link href='/dashboard'>{t('navbar.menu.dashboard')}</Nav.Link>
                     </Nav>
                     <LanguageComponent />
                 </Navbar.Collapse>
@@ -23,4 +22,4 @@ const NavbarComponent = () => {
     );
 }
 
-export default NavbarComponent;
+export default NavbarHomeComponent;

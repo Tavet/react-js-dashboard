@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aws-amplify": "^3.0.18",
     "bootstrap": "^4.5.0",
     "i18next": "^19.5.0",
     "i18next-browser-languagedetector": "^5.0.0",

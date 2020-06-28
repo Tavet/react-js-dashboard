@@ -6,7 +6,7 @@
     "navbar": {
         "menu": {
             "home": "Einleitung",
-            "profile": "Profil"
+            "dashboard": "Armaturenbrett"
         }
     }
 }

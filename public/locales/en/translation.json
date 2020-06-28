@@ -6,7 +6,7 @@
     "navbar": {
         "menu": {
             "home": "Home",
-            "profile": "Profile"
+            "dashboard": "Dashboard"
         }
     }
 }

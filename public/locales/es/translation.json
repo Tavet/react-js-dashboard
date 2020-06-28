@@ -6,7 +6,7 @@
     "navbar": {
         "menu": {
             "home": "Inicio",
-            "profile": "Perfil"
+            "dashboard": "Tablero"
         }
     }
 }

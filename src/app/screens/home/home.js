@@ -1,11 +1,11 @@
 import React from 'react';
-import NavbarComponent from './components/navbar/navbar';
 import './home.sass';
+import NavbarHomeComponent from './components/navbar/navbar';
 
 const HomeScreen = () => {
     return (
         <section className="home">
-            <NavbarComponent />
+            <NavbarHomeComponent />
         </section>
     )
 }

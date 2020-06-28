@@ -1,0 +1,15 @@
+{
+    "trigger": true,
+    "modules": [
+        "captcha-define-challenge"
+    ],
+    "parentResource": "ubeslang33c1a6a3",
+    "functionName": "ubeslang33c1a6a3DefineAuthChallenge",
+    "resourceName": "ubeslang33c1a6a3DefineAuthChallenge",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "C:\\Users\\breyner\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\utils/../triggers/DefineAuthChallenge",
+    "triggerTemplate": "DefineAuthChallenge.json.ejs",
+    "roleName": "ubeslang33c1a6a3DefineAuthChallenge",
+    "skipEdit": true
+}

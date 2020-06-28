@@ -1,0 +1,16 @@
+{
+    "trigger": true,
+    "modules": [
+        "captcha-verify"
+    ],
+    "parentResource": "ubeslang33c1a6a3",
+    "functionName": "ubeslang33c1a6a3VerifyAuthChallengeResponse",
+    "resourceName": "ubeslang33c1a6a3VerifyAuthChallengeResponse",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "C:\\Users\\breyner\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\utils/../triggers/VerifyAuthChallengeResponse",
+    "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+    "roleName": "ubeslang33c1a6a3VerifyAuthChallengeResponse",
+    "skipEdit": true,
+    "RECAPTCHASECRET": "6LcDXKoZAAAAAC90xi2jNvWYEp3pPN7VQUBZ-UTj"
+}
