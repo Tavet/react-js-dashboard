@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './dashboard.sass';
 import NavbarDashboardComponent from './components/navbar/navbar';
 import PropTypes from 'prop-types';
 import { Auth } from 'aws-amplify';
 
 const DashboardScreen = ({ history }) => {
-    Auth.currentSession()
-        .then(data => console.log(data))
-        .catch(_ => history.push('/dashboard/login'));
+
+    useEffect(() => {
+        Auth.currentSession()
+            .then(_ => { })
+            .catch(_ => history.push('/dashboard/login'));
+    }, [history])
 
     return (
         <section className="dashboard">

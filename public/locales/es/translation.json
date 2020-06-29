@@ -12,27 +12,38 @@
     "dashboard": {
         "screens": {
             "register": {
+                "title": "Registrarse",
+                "p": "¡Atrévete a adquirir tu propia disciplina y aprender nuevo vocabulario!",
                 "form": {
                     "control": {
+                        "name": {
+                            "title": "Nombre",
+                            "helper": "Nos gustaría saber a quién dirigimos nuestra palabra :)",
+                            "errors": {
+                                "required": "Debes escribir tu nombre",
+                                "pattern": "Escribe un nombre válido",
+                                "maxLength": "Tu nombre no debe exceder los 50 carácteres"
+                            }
+                        },
                         "email": {
                             "title": "Correo electrónico",
-                            "helper": "No compartiremos tu correo con nadie más.",
+                            "helper": "No compartiremos tu correo electrónico con nadie más",
                             "errors": {
                                 "required": "Debes escribir un correo electrónico",
-                                "pattern": "Correoelectrónico inválido"
+                                "pattern": "Correo electrónico inválido",
+                                "maxLength": "El correo electrónico no debe superar los 50 carácteres"
                             }
                         },
                         "password": {
                             "title": "Contraseña",
-                            "helper": "",
                             "errors": {
                                 "required": "Debes escribir una contraseña",
-                                "length": "Escribe una contraseña segura"
+                                "minLength": "Escribe una contraseña mayor a 6 carácteres"
                             }
                         },
                         "location": {
                             "title": "Ubicación",
-                            "helper": "",
+                            "helper": "Utilizaremos tu ubicación para mejorar las expresiones culturales",
                             "errors": {
                                 "required": "Por favor escoge una ubicación"
                             }

@@ -10,10 +10,65 @@
         }
     },
     "dashboard": {
+        "navbar": {
+            "authenticated": {},
+            "no_authenticated": {
+                "home": "Ingresar"
+            }
+        },
         "screens": {
-            "register": {
+            "login": {
+                "title": "Ingresar",
+                "errors": {
+                    "title": "¡Oh rayos!",
+                    "UserNotConfirmedException": "¡Necesitas confirmar tu correo electrónico antes de acceder!",
+                    "NotAuthorizedException": "El usuario y/o la contraseña no son correctos",
+                    "UserNotFoundException": "El correo electrónico con el que intentas acceder no existe",
+                    "default": "No pudimos verificar tu cuenta, por favor inténtalo nuevamente"
+                },
+                "success": {},
                 "form": {
                     "control": {
+                        "email": {
+                            "title": "Correo electrónico",
+                            "errors": {
+                                "required": "Debes escribir un correo electrónico",
+                                "pattern": "Correo electrónico inválido"
+                            }
+                        },
+                        "password": {
+                            "title": "Contraseña",
+                            "errors": {
+                                "required": "Debes escribir una contraseña"
+                            }
+                        },
+                        "submit": "Ingresar"
+                    }
+                }
+            },
+            "register": {
+                "title": "Registrarse",
+                "p": "¡Atrévete a adquirir tu propia disciplina y aprender nuevo vocabulario!",
+                "errors": {
+                    "title": "¡Oh rayos! Ocurrió un error durante el registro",
+                    "UsernameExistsException": "¡El correo electrónico ya existe!",
+                    "default": "No pudimos registrarte, por favor inténtalo nuevamente"
+                },
+                "success": {
+                    "title": "¡Perfecto!",
+                    "message": "Revisa tu bandeja de entrada para completar tu registro. Desde Ubeslang te felicitamos por dar tu primer paso a la disciplina de aprender otro lenguaje"
+                },
+                "form": {
+                    "control": {
+                        "name": {
+                            "title": "Nombre",
+                            "helper": "Nos gustaría saber a quién dirigimos nuestra palabra :)",
+                            "errors": {
+                                "required": "Debes escribir tu nombre",
+                                "pattern": "Escribe un nombre válido",
+                                "maxLength": "Tu nombre no debe exceder los 50 carácteres"
+                            }
+                        },
                         "email": {
                             "title": "Correo electrónico",
                             "helper": "No compartiremos tu correo electrónico con nadie más",
@@ -35,12 +90,6 @@
                             "helper": "Utilizaremos tu ubicación para mejorar las expresiones culturales",
                             "errors": {
                                 "required": "Por favor escoge una ubicación"
-                            },
-                            "modal": {
-                                "title": "¡Revisa esto primero!",
-                                "message": "Detectamos que tu país actual es {0}, pero seleccionaste {1}. ¿Te gustaría cambiar el país o continuar con el que seleccionaste?",
-                                "yes": "Continuar con el país que seleccioné",
-                                "no": "Cambiar el país"
                             }
                         },
                         "language": {
