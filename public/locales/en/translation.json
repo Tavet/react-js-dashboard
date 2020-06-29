@@ -35,6 +35,12 @@
                             "helper": "Utilizaremos tu ubicación para mejorar las expresiones culturales",
                             "errors": {
                                 "required": "Por favor escoge una ubicación"
+                            },
+                            "modal": {
+                                "title": "¡Revisa esto primero!",
+                                "message": "Detectamos que tu país actual es {0}, pero seleccionaste {1}. ¿Te gustaría cambiar el país o continuar con el que seleccionaste?",
+                                "yes": "Continuar con el país que seleccioné",
+                                "no": "Cambiar el país"
                             }
                         },
                         "language": {

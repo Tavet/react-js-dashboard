@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import { Auth } from 'aws-amplify';
 import RegisterForm from './form/registerForm';
 import './register.sass';
+import countries from './../../../../util/countries.json';
+import languages from './../../../../util/languages.json';
+import NavbarAuthComponent from '../components/navbar/navbar';
 
 const RegisterScreen = () => {
 
     const [userData, setUserData] = useState({});
 
     const retrieveUserData = (data) => {
-        setUserData(data);
+        setUserData(data); 
+        debugger;
         console.log("Retrieveng user data: ", data);
     }
 
@@ -29,11 +33,17 @@ const RegisterScreen = () => {
     }
 
     return (
-        <section className="register">
-            <section className="content">
-                <RegisterForm onUserData={retrieveUserData} />
+        <>
+            <NavbarAuthComponent />
+            <section className="register">
+                <section className="content">
+                    <RegisterForm
+                        countryList={countries}
+                        languageList={languages}
+                        onUserData={retrieveUserData} />
+                </section>
             </section>
-        </section>
+        </>
     );
 }
 
