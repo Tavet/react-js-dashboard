@@ -15,6 +15,7 @@ const LoginScreen = ({ history }) => {
     useEffect(() => {
         Auth.currentSession()
             .then(_ => history.push('/dashboard'))
+            .catch(_ => { })
     }, [history]);
 
     const toggleShowError = (value) => setShowError(value);

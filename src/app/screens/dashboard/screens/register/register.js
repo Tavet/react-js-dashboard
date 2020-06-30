@@ -23,6 +23,7 @@ const RegisterScreen = ({ history }) => {
     useEffect(() => {
         Auth.currentSession()
             .then(_ => history.push('/dashboard'))
+            .catch(_ => { })
     }, [history]);
 
     const retrieveUserData = (data) => {

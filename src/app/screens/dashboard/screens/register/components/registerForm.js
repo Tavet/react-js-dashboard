@@ -139,9 +139,15 @@ const RegisterForm = ({ onUserData, countryList, languageList }) => {
 };
 
 RegisterForm.propTypes = {
-  onUserData: PropTypes.func,
-  countryList: PropTypes.array,
-  languageList: PropTypes.array
-} 
+  onUserData: PropTypes.func.isRequired,
+  countryList: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired
+  })).isRequired,
+  languageList: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired
+  })).isRequired
+}
 
 export default RegisterForm;
