@@ -1,11 +1,15 @@
 import React from 'react';
 import './home.sass';
-import NavbarHomeComponent from './components/navbar/navbar';
+import FooterHomeComponent from './components/footer/footer';
+import MainHomeComponent from './components/main/main';
+import HeaderHomeComponent from './components/header/header';
 
 const HomeScreen = () => {
     return (
         <section className="home">
-            <NavbarHomeComponent />
+            <HeaderHomeComponent />
+            <MainHomeComponent />
+            <FooterHomeComponent />
         </section>
     )
 }
