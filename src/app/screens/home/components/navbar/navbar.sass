@@ -1,9 +1,39 @@
-.home-navbar
+@import "./../../../../../assets/styles/media.scss"
+
+.custom-home-navbar
+    z-index: 5;
+
+    .navbar-brand
+        font-size: 2em
+        &:hover
+            transition: 0.2s;
+            transform: scale(1.05);
+
+.home-navbar-top
+    -webkit-transition: ease-out 0.35s;
+    -moz-transition: ease-out 0.35s;
+    -o-transition: ease-out 0.35s;
+    transition: ease-out 0.35s;
     background: rgba(0,0,0,0);
-    
+
+    @include media(xs)
+        background: rgba(0,0,0,1);
+
     .navbar-brand
         color: #FAFAFA
-        font-size: 2em
-
+        &:hover
+            color: #eeeeee;
+        
     a.nav-link
         color: #FAFAFA !important;
+
+.home-navbar-normal
+    -webkit-transition: ease-out 0.35s;
+    -moz-transition: ease-out 0.35s;
+    -o-transition: ease-out 0.35s;
+    transition: ease-out 0.35s;
+    background: rgba(0,0,0,1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand, a.nav-link
+        color: #FAFAFA !important

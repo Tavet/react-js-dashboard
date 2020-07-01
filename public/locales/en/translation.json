@@ -9,11 +9,11 @@
     },
     "navbar": {
         "menu": {
-            "home": "Inicio",
-            "tools": "Qué ofrecemos",
-            "whoweare": "Quiénes somos",
-            "changelog": "Actualizaciones",
-            "dashboard": "Tablero"
+            "home": "Home",
+            "tools": "Our services",
+            "whoweare": "Who we are",
+            "changelog": "Changelogs",
+            "dashboard": "Dashboard"
         }
     },
     "dashboard": {
