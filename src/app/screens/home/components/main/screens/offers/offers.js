@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Container, Col, Carousel } from 'react-bootstrap';
+import { Row, Container, Col, Carousel, Image } from 'react-bootstrap';
 import SlideOne from './../../../../../../../assets/images/slides/slide-1.png'
 import SlideTwo from './../../../../../../../assets/images/slides/slide-2.png'
 import SlideThree from './../../../../../../../assets/images/slides/slide-3.png'
@@ -19,7 +19,7 @@ const OffersMainHomeScreen = () => {
                 <Col>
                     <Carousel activeIndex={index} onSelect={handleSelect}>
                         <Carousel.Item>
-                            <img
+                            <Image
                                 className="d-block w-100"
                                 src={SlideOne}
                                 alt="First slide"
@@ -29,7 +29,7 @@ const OffersMainHomeScreen = () => {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img
+                            <Image
                                 className="d-block w-100"
                                 src={SlideTwo}
                                 alt="First slide"
@@ -39,7 +39,7 @@ const OffersMainHomeScreen = () => {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img
+                            <Image
                                 className="d-block w-100"
                                 src={SlideThree}
                                 alt="First slide"

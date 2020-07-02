@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.sass';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import UbeslangLogo from '../../../../../assets/images/ubeslang.png'
 
 const FooterHomeComponent = () => {
     return (
@@ -29,8 +30,8 @@ const FooterHomeComponent = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <h1 className="logo">Ubeslang.</h1>
-                        <p>&copy; 2020 - Developed by Breyner D. Rojas</p>
+                        <Image src={UbeslangLogo} width="52" height="auto" fluid />
+                        <p>&copy; 2020 - Made by Breyner D. Rojas</p>
                     </Col>
                 </Row>
             </Container>
