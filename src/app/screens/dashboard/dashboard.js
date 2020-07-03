@@ -3,6 +3,7 @@ import './dashboard.sass';
 import NavbarDashboardComponent from './components/navbar/navbar';
 import PropTypes from 'prop-types';
 import { Auth } from 'aws-amplify';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const DashboardScreen = ({ history }) => {
 
@@ -15,7 +16,13 @@ const DashboardScreen = ({ history }) => {
     return (
         <section className="dashboard">
             <NavbarDashboardComponent />
-            yeah dashboard
+            <Container className="dashboard-container">
+                <Row>
+                    <Col>
+                        <h1>Time to learn!</h1>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 }

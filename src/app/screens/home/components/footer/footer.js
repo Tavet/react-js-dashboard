@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.sass';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import UbeslangLogo from '../../../../../assets/images/ubeslang.png'
+import UbeslangLogo from '../../../../../assets/images/ubeslang-85.png'
 
 const FooterHomeComponent = () => {
     return (

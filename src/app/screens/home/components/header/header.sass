@@ -5,7 +5,7 @@ header.home-header
     background: linear-gradient(90deg, #3dac76 0%, #31c47d 100%);
     z-index: 2;
     position: relative;
-    color: #FFFFFF;
+    color: white;
 
     main.home-header-main
         height: 100%
@@ -46,9 +46,14 @@ header.home-header
                 border: none;
                 border-radius: 30px 0 30px 0;
                 background: #293241;
-                
+                a:link, a:visited, a:hover, a:active
+                    text-decoration: none;
+                    color: white;
                 &:hover
-                    transition: 0.2s
+                    -webkit-transition: ease-out 0.35s;
+                    -moz-transition: ease-out 0.35s;
+                    -o-transition: ease-out 0.35s;
+                    transition: ease-out 0.35s;
                     border-radius: 30px;
                     
 

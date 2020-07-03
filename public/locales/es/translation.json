@@ -18,9 +18,15 @@
     },
     "dashboard": {
         "navbar": {
-            "authenticated": {},
+            "authenticated": {
+                "home": "Aprender",
+                "progress": "Progreso",
+                "settings": "Ajustes",
+                "assistant": "Asistente"
+            },
             "no_authenticated": {
-                "home": "Ingresar"
+                "login": "Log in",
+                "register": "I'm new!"
             }
         },
         "screens": {

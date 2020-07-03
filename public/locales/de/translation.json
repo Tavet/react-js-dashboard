@@ -1,38 +1,106 @@
 {
     "home": {
         "title": "Ubeslang",
-        "slogan": "¡Aprende vocabulario en cualquier lugar!"
+        "slogan": "¡Aprende vocabulario en cualquier lugar!",
+        "header": {
+            "title": "La manera más eficiente de adquirir vocabulario",
+            "content": "Aprende con los métodos más óptimos y famosos utilizados por políglotas a nivel mundial. La adquisición de conocimiento en las personas varia de acuerdo a su personalidad intelectual; preparamos todo lo necesario para que tu aprendizaje sea impecable."
+        }
     },
     "navbar": {
         "menu": {
-            "home": "Inicio",
-            "dashboard": "Tablero"
+            "home": "Home",
+            "tools": "Our services",
+            "whoweare": "Who we are",
+            "changelog": "Changelogs",
+            "dashboard": "Dashboard"
         }
     },
     "dashboard": {
+        "navbar": {
+            "authenticated": {
+                "home": "Lernen",
+                "progress": "Fortschritt",
+                "settings": "Einstellung",
+                "assistant": "Assistent"
+            },
+            "no_authenticated": {
+                "login": "Log in",
+                "register": "I'm new!"
+            }
+        },
         "screens": {
-            "register": {
+            "login": {
+                "title": "Ingresar",
+                "errors": {
+                    "title": "¡Oh rayos!",
+                    "UserNotConfirmedException": "¡Necesitas confirmar tu correo electrónico antes de acceder!",
+                    "NotAuthorizedException": "El usuario y/o la contraseña no son correctos",
+                    "UserNotFoundException": "El correo electrónico con el que intentas acceder no existe",
+                    "default": "No pudimos verificar tu cuenta, por favor inténtalo nuevamente"
+                },
+                "success": {},
                 "form": {
                     "control": {
                         "email": {
                             "title": "Correo electrónico",
-                            "helper": "No compartiremos tu correo con nadie más.",
                             "errors": {
                                 "required": "Debes escribir un correo electrónico",
-                                "pattern": "Correoelectrónico inválido"
+                                "pattern": "Correo electrónico inválido"
                             }
                         },
                         "password": {
                             "title": "Contraseña",
-                            "helper": "",
+                            "errors": {
+                                "required": "Debes escribir una contraseña"
+                            }
+                        },
+                        "submit": "Ingresar"
+                    }
+                }
+            },
+            "register": {
+                "title": "Registrarse",
+                "p": "¡Atrévete a adquirir tu propia disciplina y aprender nuevo vocabulario!",
+                "errors": {
+                    "title": "¡Oh rayos! Ocurrió un error durante el registro",
+                    "UsernameExistsException": "¡El correo electrónico ya existe!",
+                    "default": "No pudimos registrarte, por favor inténtalo nuevamente"
+                },
+                "success": {
+                    "title": "¡Perfecto!",
+                    "message": "Revisa tu bandeja de entrada para completar tu registro. Desde Ubeslang te felicitamos por dar tu primer paso a la disciplina de aprender otro lenguaje"
+                },
+                "form": {
+                    "control": {
+                        "name": {
+                            "title": "Nombre",
+                            "helper": "Nos gustaría saber a quién dirigimos nuestra palabra :)",
+                            "errors": {
+                                "required": "Debes escribir tu nombre",
+                                "pattern": "Escribe un nombre válido",
+                                "maxLength": "Tu nombre no debe exceder los 50 carácteres"
+                            }
+                        },
+                        "email": {
+                            "title": "Correo electrónico",
+                            "helper": "No compartiremos tu correo electrónico con nadie más",
+                            "errors": {
+                                "required": "Debes escribir un correo electrónico",
+                                "pattern": "Correo electrónico inválido",
+                                "maxLength": "El correo electrónico no debe superar los 50 carácteres"
+                            }
+                        },
+                        "password": {
+                            "title": "Contraseña",
                             "errors": {
                                 "required": "Debes escribir una contraseña",
-                                "length": "Escribe una contraseña segura"
+                                "minLength": "Escribe una contraseña mayor a 6 carácteres"
                             }
                         },
                         "location": {
                             "title": "Ubicación",
-                            "helper": "",
+                            "helper": "Utilizaremos tu ubicación para mejorar las expresiones culturales",
                             "errors": {
                                 "required": "Por favor escoge una ubicación"
                             }
