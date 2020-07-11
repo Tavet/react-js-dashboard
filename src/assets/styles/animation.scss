@@ -1,0 +1,36 @@
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+
+@mixin animate($duration, $size, $type) {
+    @if $type == scale {
+        -webkit-transition: ease-out $duration;
+        -moz-transition: ease-out $duration;
+        -o-transition: ease-out $duration;
+        transition: ease-out $duration;
+        -webkit-transform: scale($size);
+        -moz-transform: scale($size);
+        -o-transform: scale($size);
+        -ms-transform: scale($size);
+        transform: scale($size);
+        @content;
+    } @else if $type == rotate {
+        -webkit-transition: ease-out $duration;
+        -moz-transition: ease-out $duration;
+        -o-transition: ease-out $duration;
+        transition: ease-out $duration;
+        -webkit-transform: rotate($size);
+        -moz-transform: rotate($size);
+        -o-transform: rotate($size);
+        -ms-transform: rotate($size);
+        transform: rotate($size);
+        @content;
+    } @else {
+        -webkit-transition: ease-out $duration;
+        -moz-transition: ease-out $duration;
+        -o-transition: ease-out $duration;
+        transition: ease-out $duration;
+        @content;
+    }
+}

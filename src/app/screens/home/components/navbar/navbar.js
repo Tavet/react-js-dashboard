@@ -14,7 +14,7 @@ const NavbarHomeComponent = () => {
                 setIsTop(scrollCheck);
             }
         })
-    }, [])
+    }, [isTop])
 
     const [t] = useTranslation();
     return (

@@ -1,0 +1,22 @@
+div.motivational-q
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5% 0 5%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+
+    p.quote   
+        color: #535b69;
+        font-weight: 700
+        font-size: 1em;
+        text-transform: uppercase
+        text-align: center
+        &::before, &::after
+            font-size: 2em;
+            content: '\0022';
+
+    img
+        width: 220px;
+        height: auto;

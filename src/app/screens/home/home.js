@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './home.sass';
 import FooterHomeComponent from './components/footer/footer';
 import MainHomeComponent from './components/main/main';

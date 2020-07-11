@@ -1,3 +1,5 @@
+@import "./../../../../../assets/styles/media.scss"
+
 .dashboard-navbar
     display: flex;
     justify-content: center;
@@ -14,6 +16,11 @@
         padding: 0;
         margin: 0;
 
+        @include media(xs)
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+
         .logo
             color: white;
             img
@@ -23,6 +30,10 @@
                 transition: ease-out 0.2s;
                 width: 78px;
                 height: auto;
+                @include media(xs)
+                    order: 1;
+                    width: 48px;
+                    padding: 15px 0;
                 &:hover
                     -webkit-transition: ease-out 0.2s;
                     -moz-transition: ease-out 0.2s;
@@ -32,15 +43,25 @@
 
         div.dashboard-navbar-center
             display: flex;
+            @include media(xs)
+                width: 100%;
+                order: 3;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
 
         .dashboard-start, .dashboard-end
             margin: auto 25px;
+            @include media(xs)
+                order: 2
         
         .dashboard-end
             button.language-dropdown >
                 img.language-icon
                     width: 46px;
                     height: auto;
+                    @include media(xs)
+                        width: 38px;
         a
             font-weight: 700;
 
@@ -69,6 +90,9 @@
             border-radius: 25px;
             border: 3px dotted #003158;
 
+            @include media(xs)
+                flex: 0 50%;
+                box-sizing: border-box;
 
             svg
                 color: white;
