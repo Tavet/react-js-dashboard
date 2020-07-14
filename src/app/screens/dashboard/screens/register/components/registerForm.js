@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
 import PropTypes from "prop-types";
@@ -87,50 +87,56 @@ const RegisterForm = ({ onUserData, countryList, languageList }) => {
             )}
         </Form.Text>
       </Form.Group>
-      <Form.Group controlId='formRegister.location'>
-        <Form.Label>
-          {t("dashboard.screens.register.form.control.location.title")}
-        </Form.Label>
-        <Controller as={<Select options={countryList} />}
-          control={control}
-          rules={{ required: true }}
-          onChange={([selected]) => {
-            return selected;
-          }}
-          name="location"
-        />
-        <Form.Text className='text-muted'>
-          {t("dashboard.screens.register.form.control.location.helper")}
-        </Form.Text>
-        <Form.Text className='text-error'>
-          {errors.location &&
-            t(
-              `dashboard.screens.register.form.control.location.errors.${errors.location.type}`
-            )}
-        </Form.Text>
-      </Form.Group>
-      <Form.Group controlId='formRegister.language'>
-        <Form.Label>
-          {t("dashboard.screens.register.form.control.language.title")}
-        </Form.Label>
-        <Controller as={<Select options={languageList} />}
-          control={control}
-          rules={{ required: true }}
-          onChange={([selected]) => {
-            return selected;
-          }}
-          name="language"
-        />
-        <Form.Text className='text-muted'>
-          {t("dashboard.screens.register.form.control.language.helper")}
-        </Form.Text>
-        <Form.Text className='text-error'>
-          {errors.language &&
-            t(
-              `dashboard.screens.register.form.control.language.errors.${errors.language.type}`
-            )}
-        </Form.Text>
-      </Form.Group>
+      <Row>
+        <Col>
+          <Form.Group controlId='formRegister.location'>
+            <Form.Label>
+              {t("dashboard.screens.register.form.control.location.title")}
+            </Form.Label>
+            <Controller as={<Select options={countryList} />}
+              control={control}
+              rules={{ required: true }}
+              onChange={([selected]) => {
+                return selected;
+              }}
+              name="location"
+            />
+            <Form.Text className='text-muted'>
+              {t("dashboard.screens.register.form.control.location.helper")}
+            </Form.Text>
+            <Form.Text className='text-error'>
+              {errors.location &&
+                t(
+                  `dashboard.screens.register.form.control.location.errors.${errors.location.type}`
+                )}
+            </Form.Text>
+          </Form.Group>
+        </Col>
+        <Col>
+          <Form.Group controlId='formRegister.language'>
+            <Form.Label>
+              {t("dashboard.screens.register.form.control.language.title")}
+            </Form.Label>
+            <Controller as={<Select options={languageList} />}
+              control={control}
+              rules={{ required: true }}
+              onChange={([selected]) => {
+                return selected;
+              }}
+              name="language"
+            />
+            <Form.Text className='text-muted'>
+              {t("dashboard.screens.register.form.control.language.helper")}
+            </Form.Text>
+            <Form.Text className='text-error'>
+              {errors.language &&
+                t(
+                  `dashboard.screens.register.form.control.language.errors.${errors.language.type}`
+                )}
+            </Form.Text>
+          </Form.Group>
+        </Col>
+      </Row>
       <Button variant='primary' type='submit'>
         {t(`dashboard.screens.register.form.control.submit`)}
       </Button>

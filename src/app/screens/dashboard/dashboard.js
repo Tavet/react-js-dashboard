@@ -23,7 +23,7 @@ const DashboardScreen = ({ history }) => {
             <NavbarDashboardComponent />
             <Container className="dashboard-container">
                 <Row>
-                    <Col xs={9}>
+                    <Col xs={12} sm={9}>
                         <div className="dashboard-header">
                             <h1>Time to learn!</h1>
                             <Button>New list <FaPlusSquare /></Button>
@@ -41,7 +41,7 @@ const DashboardScreen = ({ history }) => {
                             notifications={1}
                         />
                     </Col>
-                    <Col xs={3} className="motivational-quote">
+                    <Col xs={12} sm={3} className="motivational-quote">
                         <QuoteDashboardComponent />
                     </Col>
                 </Row>

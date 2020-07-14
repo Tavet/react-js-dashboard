@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
-const LoginForm = ({ onUserData }) => {
+const LoginForm = ({ onUserData, onUserNavigate }) => {
 
   // Form
   const { register, handleSubmit, errors } = useForm();
@@ -14,6 +14,10 @@ const LoginForm = ({ onUserData }) => {
   const onSubmit = (data) => {
     onUserData(data);
   };
+
+  const navigateToRegister = () => {
+    onUserNavigate("/dashboard/register");
+  }
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
@@ -58,6 +62,9 @@ const LoginForm = ({ onUserData }) => {
       </Form.Group>
       <Button variant='primary' type='submit'>
         {t(`dashboard.screens.login.form.control.submit`)}
+      </Button>
+      <Button variant='secondary' type='button' onClick={() => navigateToRegister()}>
+        {t(`dashboard.screens.login.form.control.register`)}
       </Button>
     </Form>
   );

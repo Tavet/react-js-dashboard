@@ -1,3 +1,5 @@
+@import "./../../../../../assets/styles/media.scss"
+    
 header.home-header 
     height: 100%;
     width: 100%
@@ -8,6 +10,8 @@ header.home-header
     color: white;
 
     main.home-header-main
+        word-wrap: break-word;
+        -ms-word-wrap: break-word;
         height: 100%
         width: 100%;
         display: flex;
@@ -23,13 +27,20 @@ header.home-header
         position: relative;
         width: 60%;
         height: 350px;
+        @include media(xs)
+            width: 95%;
+            text-align: center;
 
         img 
             width: 650px;
             height: auto;
+            @include media(xs)
+                display: none !important;
 
         .info-box-top
             display: flex;
+            @include media(xs)
+                flex-wrap: wrap;
 
             .info-box-content
                 margin: 0 0 0 1.5rem;

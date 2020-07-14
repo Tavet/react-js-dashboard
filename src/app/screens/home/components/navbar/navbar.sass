@@ -2,12 +2,23 @@
 
 .custom-home-navbar
     z-index: 5;
+    @include media(xs)
+        -webkit-transition: ease-out 0.35s;
+        -moz-transition: ease-out 0.35s;
+        -o-transition: ease-out 0.35s;
+        transition: ease-out 0.35s;
+        background: rgba(0,0,0,1);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 
     .navbar-brand
         font-size: 2em
         &:hover
             transition: 0.2s;
             transform: scale(1.05);
+
+    .navbar-toggler
+        @include media(xs)
+            background: white;
 
 .home-navbar-top
     -webkit-transition: ease-out 0.35s;

@@ -11,7 +11,7 @@ const LangCardDashboardComponent = ({ flag, name, standardName, notifications })
             <div className="notification">{notifications}</div>
             <div className="lang-body">
                 <img src={flag} alt="Country flag"></img>
-                <h1>{name} <small>/ {standardName}</small></h1>
+                <h2>{name} <small>/ {standardName}</small></h2>
             </div>
             <div className="lang-options">
                 <BsFillAwardFill />

@@ -55,7 +55,8 @@
                                 "required": "Debes escribir una contraseña"
                             }
                         },
-                        "submit": "Ingresar"
+                        "submit": "Ingresar",
+                        "register": "¡Soy nuevo!"
                     }
                 }
             },

@@ -1,3 +1,5 @@
+@import "./../../../../../assets/styles/media.scss"
+
 div.motivational-q
     display: flex;
     flex-direction: column;
@@ -7,15 +9,16 @@ div.motivational-q
     position: fixed;
     bottom: 0;
 
-    p.quote   
+    @include media(xs)
+        position: relative;
+        padding: 40px 0 0 0;
+
+    q   
         color: #535b69;
         font-weight: 700
         font-size: 1em;
         text-transform: uppercase
         text-align: center
-        &::before, &::after
-            font-size: 2em;
-            content: '\0022';
 
     img
         width: 220px;

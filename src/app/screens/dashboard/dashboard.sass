@@ -1,16 +1,32 @@
+@import "./../../../assets/styles/media.scss"
 .dashboard
     width: 100%
-    height: 100%
+    min-height: 100%;
     background: #011627;
     color: white;
 
+    h1
+        &::after
+            content: '';
+            display: block;
+            margin-top: 8px;
+            width: 48px;
+            height: 4px;
+            border-radius: 2px;
+            background-color: white;
     .dashboard-container
         color: #FAFAFA;
-        margin: 2em auto;
         padding: 25px;
         border-radius: 40px 40px 0 0;
+
+        @include media(xs)
+            padding: 25px 25px 0 25px;
 
     .dashboard-header
         display: flex;
         justify-content: space-between
         align-items: center
+
+        @include media(xs)
+            flex-direction: column;
+            margin: 20px 0;

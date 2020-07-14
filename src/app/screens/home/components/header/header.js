@@ -16,7 +16,6 @@ const HeaderHomeComponent = () => {
                         <div className="info-box-content">
                             <h1>La manera más eficiente de adquirir vocabulario</h1>
                             <p>Aprende con los métodos más óptimos y famosos utilizados por políglotas a nivel mundial.
-                            La adquisición de conocimiento en las personas varia de acuerdo a su personalidad intelectual; preparamos todo lo necesario para que tu aprendizaje sea impecable.
                     </p>
                         </div>
                     </div>

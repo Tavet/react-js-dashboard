@@ -8,12 +8,16 @@ const NavbarHomeComponent = () => {
     const [isTop, setIsTop] = useState(1);
 
     useEffect(() => {
-        document.addEventListener('scroll', () => {
-            const scrollCheck = window.scrollY < 100;
-            if (scrollCheck !== isTop) {
-                setIsTop(scrollCheck);
-            }
-        })
+        if (window.innerWidth >= 760) {
+            document.addEventListener('scroll', () => {
+                const scrollCheck = window.scrollY < 100;
+                if (scrollCheck !== isTop) {
+                    setIsTop(scrollCheck);
+                }
+            })
+        } else {
+            setIsTop(0);
+        }
     }, [isTop])
 
     const [t] = useTranslation();

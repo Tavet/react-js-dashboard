@@ -56,8 +56,8 @@ const RegisterScreen = ({ history }) => {
 
     return (
         <>
-            <NavbarAuthComponent />
             <section className="register">
+                <NavbarAuthComponent />
                 {showError &&
                     <Alert variant="danger" onClose={() => toggleShowError(false)} dismissible>
                         <Alert.Heading>{t(`dashboard.screens.register.errors.title`)}</Alert.Heading>

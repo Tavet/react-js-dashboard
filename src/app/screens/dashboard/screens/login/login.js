@@ -26,6 +26,10 @@ const LoginScreen = ({ history }) => {
         signIn(data);
     }
 
+    const userNavigation = (route) => {
+        history.push(route);
+    }
+
     const signIn = async (data) => {
         try {
             const user = await Auth.signIn(data.email, data.password);
@@ -49,8 +53,8 @@ const LoginScreen = ({ history }) => {
 
     return (
         <>
-            <NavbarAuthComponent />
             <section className="login">
+                <NavbarAuthComponent />
                 {showError &&
                     <Alert variant="danger" onClose={() => toggleShowError(false)} dismissible>
                         <Alert.Heading>{t(`dashboard.screens.login.errors.title`)}</Alert.Heading>
@@ -60,7 +64,9 @@ const LoginScreen = ({ history }) => {
                 <section className="content">
                     <h1>{t(`dashboard.screens.login.title`)}</h1>
                     <LoginForm
-                        onUserData={retrieveUserData} />
+                        onUserData={retrieveUserData}
+                        onUserNavigate={userNavigation}
+                    />
                 </section>
             </section>
         </>
