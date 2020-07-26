@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "Ubeslang",
-        "slogan": "¡Aprende vocabulario en cualquier lugar!",
+        "slogan": "Learn vocabulary everywhere!",
         "header": {
             "title": "La manera más eficiente de adquirir vocabulario",
             "content": "Aprende con los métodos más óptimos y famosos utilizados por políglotas a nivel mundial. La adquisición de conocimiento en las personas varia de acuerdo a su personalidad intelectual; preparamos todo lo necesario para que tu aprendizaje sea impecable."
@@ -9,25 +9,30 @@
     },
     "navbar": {
         "menu": {
-            "home": "Inicio",
-            "tools": "Qué ofrecemos",
-            "whoweare": "Quiénes somos",
-            "changelog": "Actualizaciones",
-            "dashboard": "Tablero"
+            "home": "Home",
+            "tools": "Our services",
+            "whoweare": "Who we are",
+            "changelog": "Changelogs",
+            "dashboard": "Dashboard"
         }
     },
     "dashboard": {
         "navbar": {
             "authenticated": {
-                "home": "Aprender",
-                "progress": "Progreso",
-                "settings": "Ajustes",
-                "assistant": "Asistente"
+                "home": "Learn",
+                "progress": "Progress",
+                "settings": "Settings",
+                "assistant": "Assistant"
             },
             "no_authenticated": {
                 "login": "Log in",
                 "register": "I'm new!"
             }
+        },
+        "quotes": {
+            "John_D_Rockefeller": [
+                "Go as far as you can see; when you get there, you'll be able to see farther."
+            ]
         },
         "screens": {
             "login": {
@@ -55,7 +60,8 @@
                                 "required": "Debes escribir una contraseña"
                             }
                         },
-                        "submit": "Ingresar"
+                        "submit": "Ingresar",
+                        "register": "¡Soy nuevo!"
                     }
                 }
             },

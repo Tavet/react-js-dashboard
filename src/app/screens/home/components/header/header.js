@@ -4,6 +4,7 @@ import NavbarHomeComponent from './../navbar/navbar';
 import { Image, Button } from 'react-bootstrap';
 import StudentVector from './../../../../../assets/images/vectors/student.svg';
 import { Link } from 'react-router-dom';
+
 const HeaderHomeComponent = () => {
 
     return (
@@ -15,7 +16,7 @@ const HeaderHomeComponent = () => {
                         <Image src={StudentVector} bsPrefix className="vector-home"></Image>
                         <div className="info-box-content">
                             <h1>La manera más eficiente de adquirir vocabulario</h1>
-                            <p>Aprende con los métodos más óptimos y famosos utilizados por políglotas a nivel mundial.
+                            <p>Aprende con uno de los métodos más óptimos y famosos utilizados por políglotas a nivel mundial.
                     </p>
                         </div>
                     </div>
